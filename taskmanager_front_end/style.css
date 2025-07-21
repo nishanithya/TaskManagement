@@ -1,0 +1,120 @@
+/* Reset default margins and set up base font */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f7fa;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container styling */
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+}
+
+/* Headings */
+h1, h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Form layout */
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 30px;
+  justify-content: space-between;
+}
+
+.form input {
+  flex: 1 1 48%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.form button {
+  flex: 1 1 100%;
+  padding: 12px;
+  background-color: #4caf50;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.form button:hover {
+  background-color: #43a047;
+}
+
+/* Task cards */
+.tasks {
+  display: grid;
+  gap: 15px;
+}
+
+.task {
+  background-color: #ffffff;
+  border-left: 5px solid #4caf50;
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  transition: transform 0.2s ease-in-out;
+}
+
+.task:hover {
+  transform: scale(1.02);
+}
+
+.task strong {
+  font-size: 18px;
+  color: #2c3e50;
+}
+
+.task small {
+  display: block;
+  margin-top: 5px;
+  color: #777;
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  .form input,
+  .form button {
+    flex: 1 1 100%;
+  }
+}
+.task button {
+  margin: 5px 5px 0 0;
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.task button:first-of-type {
+  background-color: #2196f3;
+  color: white;
+}
+
+.task button:last-of-type {
+  background-color: #e53935;
+  color: white;
+}
+
+.task button:hover {
+  opacity: 0.9;
+}
+

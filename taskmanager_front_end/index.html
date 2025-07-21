@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Task Manager</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>📝 Task Manager</h1>
+
+    <form id="taskForm" class="form">
+      <input type="text" id="title" placeholder="Task Title" required />
+      <input type="text" id="description" placeholder="Description" />
+      <input type="text" id="category" placeholder="Category" />
+      <input type="text" id="status" placeholder="Status (e.g., Pending)" />
+      <input type="date" id="dueDate" required />
+      <button type="submit">➕ Add Task</button>
+    </form>
+
+    <h2>📋 All Tasks</h2>
+    <div id="tasksContainer" class="tasks"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
