@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: taskmanager-app
+    runtime: docker
+    repo: https://github.com/nishanithya/TaskManagement
+    plan: free
+    dockerfilePath: ./taskmanager/Dockerfile
